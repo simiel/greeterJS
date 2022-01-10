@@ -1,7 +1,12 @@
-let today = new Date()
-let hourNow = today.getHours()
+/*  This script displays a greeting to the user based on the current time of the day
+    Credits to an example from a Javascript Book
+*/
+let today = new Date()  //find new date or current date
+let hourNow = today.getHours()  //extract hour from date object
 let greeting
 
+
+//display greeting based on hour
 if(hourNow>18){
     greeting = 'Good Evening'
 }
