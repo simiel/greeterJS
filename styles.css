@@ -3,8 +3,30 @@
 }
 
 .carousel-item {
-  height: 1vh;
+  height: 300px;
   width: 100%;
   background: orange;
   padding: 20px;
+  color: #ffff;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.carousel-nav {
+  width: 100%;
+  background: rgba(163, 154, 139, 0.2);
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel-button {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: greenyellow;
+
+  border-radius: 50%;
 }
