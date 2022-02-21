@@ -35,5 +35,21 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     // create buttons based on the number of carousel items in container
     buttonHtml  =  Array.from(carousel_items, () => {
         return  `<span class='carousel-button'></span>`
-    })
+    });
+
+
+    // Add navigation to carousel container
+    // this will include HTML for the buttons
+
+    carousel.insertAdjacentHTML('beforeend',
+    `
+    <div class='carousel-nav'>
+    ${buttonHtml.join("")}
+    <div>
+    `
+    );
+
+    // select all buttons in carousel
+    
 })
+
