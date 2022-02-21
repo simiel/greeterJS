@@ -1,10 +1,14 @@
+* {
+  margin: 0;
+}
+
 .carousel {
   position: relative;
 }
 
 .carousel-item {
   height: 300px;
-  width: 100%;
+  /* width: 100%; */
   background: orange;
   padding: 20px;
   color: #ffff;
@@ -21,7 +25,7 @@
 .carousel-nav {
   width: 100%;
   background: rgba(163, 154, 139, 0.2);
-  padding: 20px;
+  padding: 20px 0;
   position: absolute;
   bottom: 0;
   left: 0;

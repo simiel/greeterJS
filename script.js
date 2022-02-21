@@ -50,6 +50,23 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     );
 
     // select all buttons in carousel
-    
+    const buttons = carousel.querySelectorAll('carousel-button')
+
+    buttons.forEach((button, index) =>{
+        button.addEventListener('click',() => {
+
+            // remove selected class from current slide
+            carousel_items.forEach((item) => (
+                item.classList.remove('carousel-item-selected')
+            ) )
+            // remove selected class from current button
+            buttons.forEach((button) => (
+                button.classList.remove("carousel-button-selected")
+            ))
+
+            carousel_items[index].classList.add('carousel-item-selected')
+            buttons[index].classList.add('button-item-selected')
+        })
+    })
 })
 
