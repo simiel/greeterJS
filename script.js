@@ -21,3 +21,19 @@ else {
 }
 
 document.write('<h3>' + greeting + '</h3>')
+
+
+
+// Start of Carousel Functionality
+// I think the logic is to use the css display property on classes and onclick functions
+
+// Collect main container for carousel(s)
+document.querySelectorAll('.carousel').forEach(carousel => {
+    // Collect carousel items in each container
+    const carousel_items = carousel.querySelectorAll('.carousel-items')
+
+    // create buttons based on the number of carousel items in container
+    buttonHtml  =  Array.from(carousel_items, () => {
+        return  `<span class='carousel-button'></span>`
+    })
+})
