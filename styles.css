@@ -10,6 +10,12 @@
   color: #ffff;
   font-weight: bold;
   font-size: x-large;
+  display: none;
+}
+
+/* carousel-item-selected */
+.carousel-item-selected {
+  display: block;
 }
 
 .carousel-nav {
@@ -26,7 +32,10 @@
   height: 20px;
   width: 20px;
   display: inline-block;
-  background: greenyellow;
-
+  background: rgba(172, 255, 48, 0.2);
   border-radius: 50%;
+}
+
+.carousel-button-selected {
+  background: rgba(172, 255, 48, 0.5);
 }
