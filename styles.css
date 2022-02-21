@@ -1,0 +1,10 @@
+.carousel {
+  position: relative;
+}
+
+.carousel-item {
+  height: 1vh;
+  width: 100%;
+  background: orange;
+  padding: 20px;
+}
