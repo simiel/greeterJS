@@ -45,7 +45,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     `
     <div class='carousel-nav'>
     ${buttonHtml.join("")}
-    <div>
+    </div>
     `
     );
 
