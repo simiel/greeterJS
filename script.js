@@ -30,20 +30,22 @@ document.write('<h3>' + greeting + '</h3>')
 // Collect main container for carousel(s)
 document.querySelectorAll('.carousel').forEach(carousel => {
     // Collect carousel items in each container
-    const carousel_items = carousel.querySelectorAll('.carousel-items')
+    const carousel_items = carousel.querySelectorAll('.carousel-item')
 
     // create buttons based on the number of carousel items in container
     buttonHtml  =  Array.from(carousel_items, () => {
         return  `<span class='carousel-button'></span>`
     });
 
+    console.log(buttonHtml.join(""))
+    console.log('buttonHtml.join("")')
 
     // Add navigation to carousel container
     // this will include HTML for the buttons
 
     carousel.insertAdjacentHTML('beforeend',
     `
-    <div class='carousel-nav'>
+    <div class="carousel-nav">
     ${buttonHtml.join("")}
     </div>
     `
