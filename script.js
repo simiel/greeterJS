@@ -67,7 +67,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
             ));
 
             carousel_items[index].classList.add('carousel-item-selected')
-            button.classList.add('button-item-selected')
+            button.classList.add('carousel-button-selected')
         })
     })
 
