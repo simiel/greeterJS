@@ -37,8 +37,6 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         return  `<span class='carousel-button'></span>`
     });
 
-    console.log(buttonHtml.join(""))
-    console.log('buttonHtml.join("")')
 
     // Add navigation to carousel container
     // this will include HTML for the buttons
@@ -52,7 +50,9 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     );
 
     // select all buttons in carousel
-    const buttons = carousel.querySelectorAll('carousel-button')
+    const buttons = carousel.querySelectorAll('.carousel-button')
+
+    console.log(buttons)
 
     buttons.forEach((button, index) =>{
         button.addEventListener('click',() => {
@@ -60,15 +60,18 @@ document.querySelectorAll('.carousel').forEach(carousel => {
             // remove selected class from current slide
             carousel_items.forEach((item) => (
                 item.classList.remove('carousel-item-selected')
-            ) )
+            ) );
             // remove selected class from current button
-            buttons.forEach((button) => (
-                button.classList.remove("carousel-button-selected")
-            ))
+            buttons.forEach((buttonx) => (
+                buttonx.classList.remove("carousel-button-selected")
+            ));
 
             carousel_items[index].classList.add('carousel-item-selected')
-            buttons[index].classList.add('button-item-selected')
+            button.classList.add('button-item-selected')
         })
     })
+
+    carousel_items[0].classList.add('carousel-item-selected')
+    buttons[0].classList.add('carousel-button-selected')
 })
 
